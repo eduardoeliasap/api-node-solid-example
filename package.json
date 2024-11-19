@@ -1,0 +1,27 @@
+{
+  "name": "03-api-solid-example",
+  "version": "1.0.0",
+  "description": "## RNs (Regras de negócios) São os caminhos que cada requisito pode tomar. Sempre vai estar associada aos RFs",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "tsx watch src/server.ts",
+    "start": "node build/server.js",
+    "build": "tsup src --out-dir build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@rocketseat/eslint-config": "^2.2.2",
+    "@types/node": "22.9.0",
+    "eslit": "^6.0.0",
+    "tsup": "8.3.5",
+    "tsx": "4.19.2",
+    "typescript": "5.6.3"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "fastify": "5.1.0",
+    "zod": "^3.23.8"
+  }
+}
