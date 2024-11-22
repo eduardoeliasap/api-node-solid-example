@@ -1,28 +1,39 @@
 {
   "name": "03-api-solid-example",
   "version": "1.0.0",
+  "type": "module",
   "description": "## RNs (Regras de negócios) São os caminhos que cada requisito pode tomar. Sempre vai estar associada aos RFs",
   "main": "index.js",
   "scripts": {
     "start:dev": "tsx watch src/server.ts",
     "start": "node build/server.js",
-    "build": "tsup src --out-dir build"
+    "build": "tsup src --out-dir build",
+    "test": "vitest run",
+    "test:watch": "vitest --coverage",
+    "test:coverage": "vitest run --coverage",
+    "test:ui": "vitest --ui"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@rocketseat/eslint-config": "^2.2.2",
+    "@types/bcrypt": "^5.0.2",
     "@types/bcryptjs": "^2.4.6",
     "@types/node": "22.9.0",
+    "@vitest/coverage-v8": "^2.1.5",
+    "@vitest/ui": "^2.1.5",
     "eslit": "^6.0.0",
     "prisma": "^5.22.0",
     "tsup": "8.3.5",
     "tsx": "4.19.2",
-    "typescript": "5.6.3"
+    "typescript": "5.6.3",
+    "vite-tsconfig-paths": "^5.1.3",
+    "vitest": "^2.1.5"
   },
   "dependencies": {
     "@prisma/client": "^5.22.0",
+    "bcrypt": "^5.1.1",
     "bcryptjs": "^2.4.3",
     "dotenv": "^16.4.5",
     "fastify": "5.1.0",
