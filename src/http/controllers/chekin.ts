@@ -19,6 +19,8 @@ export async function checkin(request: FastifyRequest, reply: FastifyReply) {
     await checkinUseCase.execute({
       userId: user_id,
       gymId: gym_id,
+      userLatitude: -22.6551276,
+      userLongitude: -51.0645172,
     })
   } catch (err) {
     if (err instanceof GenericError) {
